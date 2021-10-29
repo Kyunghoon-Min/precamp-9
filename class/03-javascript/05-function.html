@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>함수 실무 예제</title>
+    <script>
+        function aaa(){
+            const token = String(Math.floor(Math.random() * 1000000)).padStart(6,"0")
+           
+            // console.log(token) 콘솔창에 나옴
+            document.getElementById("qqq").innerText=token //html, 문서에 나옴
+        }
+       
+    </script>
+</head>
+<body>
+    <div id="qqq">000000</div>
+    <button onclick="aaa()">인증번호 전송</button>
+    
+</body>
+</html>
